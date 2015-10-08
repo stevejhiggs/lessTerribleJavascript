@@ -1,0 +1,22 @@
+{
+  "name": "lessterriblejavascript",
+  "version": "1.0.0",
+  "description": "supporting files for my \"How I became a less terrible javascript developer\" talk",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevejhiggs/lessTerribleJavascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevejhiggs/lessTerribleJavascript/issues"
+  },
+  "homepage": "https://github.com/stevejhiggs/lessTerribleJavascript#readme",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}

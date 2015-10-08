@@ -1,3 +1,4 @@
+var $ = require('jquery');
 var data = require('./data');
 var listHandler = require('./listHandler');
 
