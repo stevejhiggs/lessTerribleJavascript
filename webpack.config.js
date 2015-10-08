@@ -8,5 +8,10 @@ module.exports = {
     output: {
         path: path.join(__dirname, '/public/generated/'),
         filename: 'bundle.js'
+    },
+    module: {
+        preLoaders: [
+            {test: /\.(js)$/, exclude: /node_modules/, loader: require.resolve('eslint-loader')}
+        ]
     }
 }
