@@ -16,3 +16,14 @@ gulp.task('bundle:dev', function (done) {
 
 gulp.task('default', ['bundle:dev'], function () {
 });
+
+gulp.task('watch', function () {
+    webpack(require('./webpack.config')).watch({
+        aggregateTimeout: 300 // wait so long for more changes
+    }, function (err, stats) {
+        if (err) throw new gutil.PluginError('watch', err);
+        gutil.log('[watch]', stats.toString({
+            colors: true
+        }));
+    });
+});
