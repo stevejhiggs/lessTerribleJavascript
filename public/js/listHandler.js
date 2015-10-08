@@ -1,8 +1,10 @@
+'use strict';
+
 var _ = require('underscore');
 
 var appendDataToList = function(target, dataToAppend) {
     dataToAppend.forEach(function(person) {
-        target.append("<tr><td>" + person.first +  "</td><td>" + person.last + "</td><td>" + person.email + "</td></tr>");
+        target.append('<tr><td>' + person.first +  '</td><td>' + person.last + '</td><td>' + person.email + '</td></tr>');
     });
 };
 
