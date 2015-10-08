@@ -3,6 +3,14 @@
       "node": true,                     // Node.js global variables and Node.js-specific rules
       "browser":true
   },
+    "ecmaFeatures": {
+        "blockBindings": true,
+        "forOf": true,
+        "arrowFunctions": true,
+        "classes": true,
+        "templateStrings": true,
+        "modules": true
+    },
   "rules": {
     /**
      * Strict mode

@@ -1,15 +1,13 @@
-'use strict';
+import $ from 'jquery';
+import data from './data';
+import {appendDataToList, sortByFirstName} from './listHandler';
 
-var $ = require('jquery');
-var data = require('./data');
-var listHandler = require('./listHandler');
+let listEntryPoint = $('#nameList tbody');
 
-var listEntryPoint = $('#nameList tbody');
+appendDataToList(listEntryPoint, data);
 
-listHandler.appendDataToList(listEntryPoint, data);
-
-$('#sortBtn').click(function() {
-   listHandler.sortByFirstName(listEntryPoint, data);
+$('#sortBtn').click(() => {
+    sortByFirstName(listEntryPoint, data);
     return false;
 });
 

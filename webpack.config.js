@@ -12,6 +12,9 @@ module.exports = {
     module: {
         preLoaders: [
             {test: /\.(js)$/, exclude: /node_modules/, loader: require.resolve('eslint-loader')}
+        ],
+        loaders: [
+            {test: /\.(js)$/, exclude: /node_modules/, loader: require.resolve('babel-loader')}
         ]
     },
     plugins: []

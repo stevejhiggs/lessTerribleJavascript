@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = [
+const data = [
     {
         first: 'Jane',
         last: 'Doe',
@@ -22,3 +20,5 @@ module.exports = [
         email: 'redpants@notclarkekent.com'
     }
 ];
+
+export default data;
