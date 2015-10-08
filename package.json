@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/stevejhiggs/lessTerribleJavascript#readme",
   "dependencies": {
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "underscore": "^1.8.3"
   }
 }

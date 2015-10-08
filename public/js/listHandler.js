@@ -1,3 +1,5 @@
+var _ = require('underscore');
+
 var appendDataToList = function(target, dataToAppend) {
     dataToAppend.forEach(function(person) {
         target.append("<tr><td>" + person.first +  "</td><td>" + person.last + "</td><td>" + person.email + "</td></tr>");
@@ -5,18 +7,9 @@ var appendDataToList = function(target, dataToAppend) {
 };
 
 var sortByFirstName = function(target, sourceData) {
-    sourceData.sort(function (a, b) {
-        if (a.first > b.first) {
-            return 1;
-        }
-        if (a.first < b.first) {
-            return -1;
-        }
-        return 0;
-    });
-
+    var sortedData = _.sortBy(sourceData, function(o) { return o.first; });
     target.empty();
-    appendDataToList(target, sourceData);
+    appendDataToList(target, sortedData);
 };
 
 module.exports = {
