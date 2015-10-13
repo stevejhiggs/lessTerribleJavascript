@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var webpack = require('webpack');
 var gutil = require('gulp-util');
-var eslint = require('gulp-eslint');
 
 gulp.task('bundle:dev', function (done) {
     webpack(require('./webpack.config'), function (err, stats) {
